@@ -110,8 +110,8 @@ h1 em::after { content: ""; position: absolute; height: .08em; background: var(-
 .contact { background: var(--red); color: var(--ink); }
 .contact h2 { max-width: 12ch; font-size: clamp(3.4rem, 7.5vw, 8rem); line-height: .9; }
 .contact-copy > p:first-child { font-size: clamp(1.15rem, 1.6vw, 1.45rem); max-width: 28rem; }
-.button-light { margin-top: 1.2rem; background: var(--white); color: var(--ink); opacity: 1; cursor: not-allowed; }
-.prototype-note { margin: .75rem 0 0; max-width: 26rem; font-size: .78rem; font-weight: 650; }
+.button-light { margin-top: 1.2rem; background: var(--white); color: var(--ink); opacity: 1; cursor: pointer; }
+.button-light:hover { background: var(--ink); color: var(--white); }
 
 footer { padding: 2.5rem var(--pad); background: var(--ink); color: var(--white); display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: end; }
 .wordmark-footer { color: var(--white); }
