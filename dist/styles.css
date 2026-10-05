@@ -53,83 +53,95 @@ a { color: inherit; }
   font-size: 1.05rem;
 }
 .wordmark span { display: block; }
-.wordma����Y[X\���\�^N�[�[�N���܎��\�K\�Y
-N�B��]��\�^N��^��\��[\
-K��\�[Kݝ����\�[JN�B��]�K���\��K�XY\�X�H�۝\�^�N����[N�۝]�ZY��
-�L]\�\�X�[�Έ�Y[N^]�[�ٛܛN�\\��\�N^][�\�[�K[ٙ��]��ܙ[NB��]�K���\��H�^YX�ܘ][ۋ]X�ۙ\�Έ\�^YX�ܘ][ۋX��܎��[��\�[��B��]�N�ݙ\����\��N�ݙ\��^YX�ܘ][ۋX��܎��\��[���܎�B��XY\�X�H��\�Y�K\�[��[��^YX�ܘ][ێ��ۙN��ܙ\�X���N����Y�\�K\�Y
-N�Y[��X���N��N�[N�B���\���Y[�Έ�[\
-��\�[K
-���
-K�\�[JH�\�K\Y
-H��[N�Z[�ZZY���[�LݚHM�
-N�\�^N��^��^Y\�X�[ێ���[[��B��\��Z�X��\��\�^N��^��\�Y�KX�۝[���X�KX�]�Y[���\���[N��۝\�^�N���\�[N��۝]�ZY��
-��]\�\�X�[�Έ�L�[N�^]�[�ٛܛN�\\��\�N�B��\��YܚY�X\��[�]��]]��\�^N�ܚY�ܚY][\]KX��[[�ΈZ[�X^
-K���HZ[�X^
-N�[K�ٜ�N��\��[\
-��[K
-]��
-��[JN�[YۋZ][\Έ[��B�K���X\��[�]���B�K���۝Y�[Z[N��\�K\�\�Y�N��۝]�ZY��
-�B�H�X\��[�X���N��X^]�Y�MX���۝\�^�N��[\
-ˍ��[K
-ˍ����\�[JN�[�KZZY���N�]\�\�X�[�ΈK�
-MY[N�B�H[H���][ێ��[]]�N��۝]�ZY��
-�B�H[N��Y�\���۝[�������][ێ�X���]N�ZY���[N��X��ܛ�[���\�K\�Y
-N�Y��K�
-[N��Y��K�
-[N����N��
-[N��[�ٛܛN���]JLK��Y�N�B��\��X\�YH�Y[��X���N��\�[N�B��\��X\�YH���۝\�^�N��[\
-K�Lܙ[KK�M]��K�
-\�[JN�[�KZZY��K�
-N�X^]�Y��\�[N�B��\��XX�[ۜ��\�^N��^��^]ܘ\�ܘ\��\�\�[HK�\�[N�[YۋZ][\Έ�[�\��X\��[�]����[N�B���]ۈ�\�^N�[�[�KX�����Z[�ZZY��
-�Y[�Έ��[HK���[N��ܙ\��\��Y�\�KZ[��N��ܙ\�\�Y]\Έ��۝�[�\�]��۝\�^�N��
-\�[N��۝]�ZY���]\�\�X�[�Έ��Y[N�^YX�ܘ][ێ��ۙN�B���]ۋ\�[X\�H��X��ܛ�[���\�KZ[��N���܎��\�K]�]JN�B���]ۋ\�[X\�N�ݙ\���X��ܛ�[���\�K\�Y
-N��ܙ\�X��܎��\�K\�Y
-N�B��^[[����۝\�^�N����[N��۝]�ZY���^][�\�[�K[ٙ��]���\�[N�B����X�[ۋ\�[K��X�[ۋY\����۝X��Y[�Έ�[\
+.wordmark .red-mark { display: inline; color: var(--red); }
+nav { display: flex; gap: clamp(1.25rem, 3vw, 2.75rem); }
+nav a, footer > a, .header-cta {
+  font-size: .78rem;
+  font-weight: 750;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  text-underline-offset: .3rem;
+}
+nav a, footer > a { text-decoration-thickness: 1px; text-decoration-color: transparent; }
+nav a:hover, footer > a:hover { text-decoration-color: currentColor; }
+.header-cta { justify-self: end; text-decoration: none; border-bottom: 2px solid var(--red); padding-bottom: .18rem; }
 
-\�[KL��L�[JH�\�K\Y
-N�B���X�[ۋ\�[H��ܙ\�]��\��Y�\�KZ[��N�B���X�[ۋ[X�[�X\��[�X���N��[\
-��\�[K
-���
-��[JN��۝\�^�N���\�[N��۝]�ZY���]\�\�X�[�Έ�L�[N�^]�[�ٛܛN�\\��\�N�B���؛[K[^[�]�X��][^[�]��۝X�[^[�]�\�^N�ܚY�ܚY][\]KX��[[�ΈZ[�X^
-K�
-Y��HZ[�X^
-N�[K�ٜ�N��\��[\
-��\�[K��L�[JN�[YۋZ][\Έ�\��B���؛[H��X��]���۝X����X�[ۋZXY[����X\��[�X���N��X^]�Y�M����۝\�^�N��[\
-���[K
-K����
-��[JN�[�KZZY���N�]\�\�X�[�ΈK�
+.hero { padding: clamp(2.5rem, 6vw, 5.5rem) var(--pad) 2rem; min-height: calc(100svh - 96px); display: flex; flex-direction: column; }
+.hero-kicker { display: flex; justify-content: space-between; gap: 2rem; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.hero-grid { margin-top: auto; display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(18rem, .7fr); gap: clamp(2rem, 5vw, 6rem); align-items: end; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2 { font-family: var(--serif); font-weight: 400; }
+h1 { margin-bottom: 0; max-width: 15ch; font-size: clamp(3.6rem, 7.6vw, 8.5rem); line-height: .9; letter-spacing: -.055em; }
+h1 em { position: relative; font-weight: 400; }
+h1 em::after { content: ""; position: absolute; height: .08em; background: var(--red); left: -.04em; right: -.04em; bottom: .04em; transform: rotate(-1.3deg); }
+.hero-aside { padding-bottom: .5rem; }
+.hero-aside > p { font-size: clamp(1.13rem, 1.55vw, 1.45rem); line-height: 1.45; max-width: 31rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; margin-top: 2rem; }
+.button { display: inline-block; min-height: 48px; padding: .88rem 1.2rem; border: 1px solid var(--ink); border-radius: 0; font: inherit; font-size: .85rem; font-weight: 800; letter-spacing: .035em; text-decoration: none; }
+.button-primary { background: var(--ink); color: var(--white); }
+.button-primary:hover { background: var(--red); border-color: var(--red); }
+.text-link { font-size: .82rem; font-weight: 800; text-underline-offset: .35rem; }
 
-Y[N�B���؛[KX��H�X��]X��H��۝\�^�N��[\
-K�
-\�[KK��]��K���[JN�B���؛[KX��H�\�X�[�X��]X��H�\�X�[�X\��[�X���N��B����X�[ۋZXY[���\�^N�ܚY�ܚY][\]KX��[[�Έ�Y��K�Y����\���[N�[YۋZ][\Έ�\��X\��[�X���N��[\
-ܙ[K
-ݝ�
-ܙ[JN�B���X�[ۋZXY[����X�[ۋ[X�[�X\��[�X���N��B���\��X�K[\���ܙ\�]��\��Y�\�KZ[��N�B���\��X�K[\�\�X�H�\�^N�ܚY�ܚY][\]KX��[[�Έ�
-Y��Y����\���[N�Y[�Έ��ܙ[H��ܙ\�X���N�\��Y�\�KZ[��N�[YۋZ][\Έ�\�[[�N�B���\��X�K[\��X\��[�X���N��B���\��X�K[\���X\��[����۝Y�[Z[N��\�K\�\�Y�N��۝\�^�N��[\
-K���[K���]�����\�[JN��۝]�ZY��
-�[�KZZY��K�L��B���\��X�K[\�\�X�H��\�X�[�X^]�Y���[N��۝\�^�N�K�
-�[N�B����X�[ۋY\����X��ܛ�[���\�KZ[��N���܎��\�K]�]JN�B�����\����X�[ۋZXY[���ܚY][\]KX��[[�Έ���Y����Y���B�����\��Z[����X^]�Y���[N��۝\�^�N�K�
-\�[N�B�����\��[\��\�\�[N��ۙN�X\��[���Y[�Έ��ܙ\�]��\��Y�ؘJ�MK�MK�MK�
-N�B�����\��[\�H�Y[�Έ��[H��ܙ\�X���N�\��Y�ؘJ�MK�MK�MK�
-N�B�����\��[\���X\��[�X���N���\�[N��۝Y�[Z[N��\�K\�\�Y�N��۝\�^�N��[\
-K���[K������\�[JN��۝]�ZY��
-�B�����\��[\��X\��[���X^]�Y���[N���܎��ؘJ�MK�L����
-N�B���X��]��X^]�Y�N��B���۝X���X��ܛ�[���\�K\�Y
-N���܎��\�KZ[��N�B���۝X���X^]�Y�L����۝\�^�N��[\
-ˍ�[K
-ˍ]���[JN�[�KZZY���N�B���۝X�X��H���\��X�[��۝\�^�N��[\
-K�M\�[KK����K�
-\�[JN�X^]�Y���[N�B���]ۋ[Y��X\��[�]��K���[N��X��ܛ�[���\�K]�]JN���܎��\�KZ[��N��X�]N�N��\��܎���X[��Y�B�����\K[��H�X\��[����\�[H�X^]�Y����[N��۝\�^�N����[N��۝]�ZY��
-�L�B�����\��Y[�Έ��\�[H�\�K\Y
-N��X��ܛ�[���\�KZ[��N���܎��\�K]�]JN�\�^N�ܚY�ܚY][\]KX��[[�ΈY��]]�Y����\���[N�[YۋZ][\Έ[��B���ܙX\��Y���\����܎��\�K]�]JN�B����\��X\��[����۝\�^�N����[N���܎��ؘJ�MK�L����JN�B����\��H��\�Y�K\�[��[��B��YYXH
-X^]�Y�L
-H��]KZXY\��ܚY][\]KX��[[�ΈY��]]��Z[�ZZY��
-�B��]��\�^N��ۙN�B��\���Z[�ZZY��]]��B��\��YܚY�ܚY][\]KX��[[�ΈY���X\��[�]���[\
+.section-rule, .section-dark, .contact { padding: clamp(5rem, 10vw, 10rem) var(--pad); }
+.section-rule { border-top: 1px solid var(--ink); }
+.section-label { margin-bottom: clamp(2.5rem, 6vw, 6rem); font-size: .75rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.problem-layout, .about-layout, .contact-layout { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(18rem, .7fr); gap: clamp(2.5rem, 8vw, 10rem); align-items: start; }
+.problem h2, .about h2, .contact h2, .section-heading h2 { margin-bottom: 0; max-width: 16ch; font-size: clamp(2.8rem, 5.2vw, 6rem); line-height: .98; letter-spacing: -.045em; }
+.problem-copy p, .about-copy p { font-size: clamp(1.05rem, 1.35vw, 1.28rem); }
+.problem-copy p:last-child, .about-copy p:last-child { margin-bottom: 0; }
 
-\�[KM��\�[JN�B�H�X^]�Y�L���B��\��X\�YH�\�^N�ܚY�ܚY][\]KX��[[�ΈY���X^]�Y���[N�B���X�[ۋZXY[������\����X�[ۋZXY[���ܚY][\]KX��[[�ΈY���B���X�[ۋZXY[����X�[ۋ[X�[�X\��[�X���N�\�[N�B���؛[K[^[�]�X��][^[�]��۝X�[^[�]�ܚY][\]KX��[[�ΈY���B���؛[H��X��]��X^]�Y�M��B���\��X�K[\�\�X�H�ܚY][\]KX��[[�ΈY���B�B��YYXH
-X^]�Y�
-M�
-H�XY\�X�H��۝\�^�N�����[N�B��\��Z�X��\��[YۋZ][\Έ�^\�\��B��\��Z�X��\��[��\�X�[�^X[Yێ��Y��B�H��۝\�^�N��[\
-ˌ\�[KM�]��
-���[JN�B��\��XX�[ۜ��[YۋZ][\Έ��]���^Y\�X�[ێ���[[��B���]ۋ�^[[���^X[Yێ��[�\��B���\��X�K[\�\�X�H��\�\�[N�B����\��ܚY][\]KX��[[�ΈY��]]��[YۋZ][\Έ[��B����\��\�^N��ۙN�B�B��YYXH
-�Y�\��\�YX�Y[[�[ێ��YX�JH�[��ܛ�X�Z]�[܎�]]��HB
+.section-heading { display: grid; grid-template-columns: .5fr 1.1fr; gap: 2rem; align-items: start; margin-bottom: clamp(3rem, 7vw, 7rem); }
+.section-heading .section-label { margin-bottom: 0; }
+.service-list { border-top: 1px solid var(--ink); }
+.service-list article { display: grid; grid-template-columns: .85fr 1fr; gap: 2rem; padding: 2.3rem 0; border-bottom: 1px solid var(--ink); align-items: baseline; }
+.service-list p { margin-bottom: 0; }
+.service-list h3 { margin: 0; font-family: var(--serif); font-size: clamp(1.6rem, 2.25vw, 2.35rem); font-weight: 400; line-height: 1.12; }
+.service-list article > p:last-child { max-width: 34rem; font-size: 1.04rem; }
+
+.section-dark { background: var(--ink); color: var(--white); }
+.process .section-heading { grid-template-columns: .4fr 1fr .75fr; }
+.process-intro { max-width: 30rem; font-size: 1.05rem; }
+.process-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(255,255,255,.4); }
+.process-list li { padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,.4); }
+.process-list h3 { margin-bottom: .35rem; font-family: var(--serif); font-size: clamp(1.6rem, 2.4vw, 2.5rem); font-weight: 400; }
+.process-list p { margin: 0; max-width: 38rem; color: rgba(255,253,248,.78); }
+
+.about h2 { max-width: 18ch; }
+.contact { background: var(--red); color: var(--ink); }
+.contact h2 { max-width: 12ch; font-size: clamp(3.4rem, 7.5vw, 8rem); line-height: .9; }
+.contact-copy > p:first-child { font-size: clamp(1.15rem, 1.6vw, 1.45rem); max-width: 28rem; }
+.button-light { margin-top: 1.2rem; background: var(--white); color: var(--ink); opacity: 1; cursor: not-allowed; }
+.prototype-note { margin: .75rem 0 0; max-width: 26rem; font-size: .78rem; font-weight: 650; }
+
+footer { padding: 2.5rem var(--pad); background: var(--ink); color: var(--white); display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: end; }
+.wordmark-footer { color: var(--white); }
+footer p { margin: 0; font-size: .78rem; color: rgba(255,253,248,.65); }
+footer > a { justify-self: end; }
+
+@media (max-width: 900px) {
+  .site-header { grid-template-columns: 1fr auto; min-height: 84px; }
+  nav { display: none; }
+  .hero { min-height: auto; }
+  .hero-grid { grid-template-columns: 1fr; margin-top: clamp(5rem, 14vw, 9rem); }
+  h1 { max-width: 12ch; }
+  .hero-aside { display: grid; grid-template-columns: 1fr; max-width: 34rem; }
+  .section-heading, .process .section-heading { grid-template-columns: 1fr; }
+  .section-heading .section-label { margin-bottom: 1rem; }
+  .problem-layout, .about-layout, .contact-layout { grid-template-columns: 1fr; }
+  .problem h2, .about h2 { max-width: 14ch; }
+  .service-list article { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .header-cta { font-size: .66rem; }
+  .hero-kicker { align-items: flex-start; }
+  .hero-kicker span:last-child { text-align: right; }
+  h1 { font-size: clamp(3.1rem, 14.5vw, 4.6rem); }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .button, .text-link { text-align: center; }
+  .service-list article { gap: 1rem; }
+  footer { grid-template-columns: 1fr auto; align-items: end; }
+  footer p { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
