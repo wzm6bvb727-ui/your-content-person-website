@@ -195,3 +195,14 @@ footer > a { justify-self: end; }
 
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+
+.contact-form { display: grid; gap: 1rem; max-width: 42rem; }
+.contact-form label { display: grid; gap: .35rem; font-size: .75rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.contact-form label span { font-size: .9em; font-weight: 500; letter-spacing: 0; text-transform: none; }
+.contact-form input, .contact-form textarea { width: 100%; border: 1px solid var(--ink); border-radius: 0; padding: .78rem .85rem; background: var(--white); color: var(--ink); font: inherit; font-size: 1rem; }
+.contact-form textarea { resize: vertical; min-height: 9rem; }
+.contact-form input:focus, .contact-form textarea:focus { outline: 3px solid rgba(18,18,18,.25); outline-offset: 2px; }
+.form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.contact-form .button { justify-self: start; border: 1px solid var(--ink); }
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
