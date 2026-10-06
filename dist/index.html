@@ -77,6 +77,9 @@
     <footer><a class="wordmark wordmark-footer" href="#top"><span>Your Content</span><span>Person<span class="blue-mark" aria-hidden="true">.</span></span></a><p>Content strategy and writing for companies, agencies, and individual leaders</p><a href="https://humanforcontext.substack.com/" target="_blank" rel="noopener noreferrer">Read my writing on Substack</a><a href="#top">Back to top</a></footer>
     <script>
       const contactDialog = document.getElementById('contact-dialog');
+      const closeContactDialog = () => { if (contactDialog.open) contactDialog.close(); contactDialog.removeAttribute('open'); };
+      closeContactDialog();
+      window.addEventListener('pageshow', closeContactDialog);
       document.querySelectorAll('[data-contact-open]').forEach((trigger) => trigger.addEventListener('click', (event) => {
         event.preventDefault();
         contactDialog.showModal();
