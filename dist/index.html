@@ -159,13 +159,32 @@
 
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
-        <p class="section-label">Contact</p>
+        <p class="section-label">Get in touch.</p>
         <div class="contact-layout">
-          <h2 id="contact-title">Have something real to say?</h2>
           <div class="contact-copy">
-            <p>Tell me what you’re working on, where it is stuck, and what the finished piece needs to do.</p>
-            <a class="button button-light" href="mailto:sharon@yourcontentperson.com">Email me at sharon@yourcontentperson.com</a>
+            <h2 id="contact-title">We’ll figure out what your content needs to do.</h2>
           </div>
+          <form class="contact-form" action="https://formspree.io/f/mzeddzqn" method="POST">
+            <div class="form-row">
+              <label>First name
+                <input type="text" name="first_name" autocomplete="given-name" required>
+              </label>
+              <label>Last name
+                <input type="text" name="last_name" autocomplete="family-name" required>
+              </label>
+            </div>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>Phone <span>(optional)</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <input type="hidden" name="_subject" value="New website inquiry — Your Content Person">
+            <button class="button button-light" type="submit">Send message</button>
+          </form>
         </div>
       </section>
     </main>
