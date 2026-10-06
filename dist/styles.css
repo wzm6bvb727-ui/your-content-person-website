@@ -108,7 +108,7 @@ footer p { margin: 0px; }
 .ctrl-f-highlight-focus { border-color: rgb(5, 253, 180); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; background-color: rgb(5, 253, 180) !important; }
 .ctrl-f-highlight { color: rgb(1, 1, 0); border-radius: 0.25em; border-width: 1px; border-style: solid; border-color: rgb(18, 141, 161); background-color: rgb(18, 141, 161) !important; }
 .ctrl-f-highlight-focus { border-color: rgb(5, 253, 180); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; background-color: rgb(5, 253, 180) !important; }
-.contact-dialog{width:min(94vw,720px);max-height:90vh;border:1px solid var(--rule);padding:0;background:var(--paper);color:var(--ink);box-shadow:0 1.5rem 4rem rgba(20,34,53,.25)}
+.contact-dialog{position:fixed;inset:0;margin:auto;z-index:20;width:min(94vw,720px);max-height:90vh;border:1px solid var(--rule);padding:0;background:var(--paper);color:var(--ink);box-shadow:0 1.5rem 4rem rgba(20,34,53,.25)}
 .contact-dialog::backdrop{background:rgba(20,34,53,.62)}
 .dialog-inner{position:relative;padding:clamp(2rem,5vw,4rem)}
 .dialog-inner h2{max-width:12ch;margin-bottom:2rem}
