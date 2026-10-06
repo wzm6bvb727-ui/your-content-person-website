@@ -26,7 +26,7 @@
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Your Content Person, home"><span>Your Content</span><span>Person<span class="blue-mark" aria-hidden="true">.</span></span></a>
       <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#process">How I work</a><a href="#about">About me</a></nav>
-      <a class="header-cta" href="#contact">Get in touch</a>
+      <a class="header-cta" href="#contact-dialog" data-contact-open="">Get in touch</a>
     </header>
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
@@ -36,9 +36,9 @@
             <p class="eyebrow">Independent content consultant for B2B services</p>
             <h1 id="hero-title">I am your content person.</h1>
             <p class="hero-lede">I turn complex ideas into thought leadership, executive content, articles, case studies, and messaging people can understand and trust. I work with companies, agencies, and individual leaders.</p>
-            <div class="hero-actions"><a class="button button-primary" href="#contact">Talk to me about a project</a><a class="text-link" href="#process">See how I work</a></div>
+            <div class="hero-actions"><a class="button button-primary" href="#contact-dialog" data-contact-open="">Talk to me about a project</a><a class="text-link" href="#process">See how I work</a></div>
           </div>
-          <figure class="hero-visual"><img src="assets/exec-1c646560-67d0-42ca-b43f-30a0a6059f1b.png" alt="A person in a remote interview and writing setup" width="1881" height="836"><figcaption>Good content starts with a clear understanding of the work.</figcaption></figure>
+          <figure class="hero-visual"><img src="assets/hero-sharon-remote.png" alt="Sharon J. Rehana in a remote interview and writing setup" width="1881" height="836"><figcaption>Good content starts with a clear understanding of the work.</figcaption></figure>
         </div>
       </section>
       <section class="problem section-rule" aria-labelledby="problem-title">
@@ -57,9 +57,34 @@
       <section class="testimonials section-rule" aria-labelledby="testimonials-title"><div class="section-heading"><h2 id="testimonials-title">What clients say</h2></div><div class="testimonial-grid"><article class="testimonial-card"><p class="testimonial-quote">Testimonial coming soon.</p><p class="testimonial-credit">Client name, title, organization</p></article><article class="testimonial-card"><p class="testimonial-quote">Testimonial coming soon.</p><p class="testimonial-credit">Client name, title, organization</p></article><article class="testimonial-card"><p class="testimonial-quote">Testimonial coming soon.</p><p class="testimonial-credit">Client name, title, organization</p></article></div></section>
       <section class="section-dark process" id="process" aria-labelledby="process-title"><div class="section-heading"><p class="process-label">How I work</p><h2 id="process-title">From idea to finished piece.</h2><p class="process-intro">I start by learning the business, then I find the point, shape the piece, and get it ready to use.</p></div><div class="process-list"><article><h3>Understand the work</h3><p>I learn the business, audience, offer, and context through a focused conversation and the right source material.</p></article><article><h3>Find the point</h3><p>I sort through the detail, ask the follow-up questions, and identify what the audience needs to understand.</p></article><article><h3>Build the piece</h3><p>I choose the right format and structure, then draft the content in a clear, human voice.</p></article><article><h3>Refine and finish</h3><p>We review the draft, tighten what matters, and leave you with a finished piece you can use.</p></article></div></section>
       <section class="about section-rule" id="about" aria-labelledby="about-title"><div class="about-visual"><img src="sharon-rehana-headshot.jpeg" alt="Sharon J. Rehana" width="399" height="399"></div><div class="about-content"><p class="section-label">About me</p><h2 id="about-title">I’m Sharon J. Rehana.</h2><div class="about-copy"><p>I’m a trained journalist and B2B content strategist and writer. My career began in magazine journalism. Since then, I’ve spent years working with executives and subject matter experts to make complex ideas clear.</p><p>My work has taken me from concrete and plumbing to associations, SaaS, and technology. The subject changes; my job is to learn it quickly, ask better questions, and make it clear.</p><p>I bring curiosity, patience, and editorial judgment to every project. I know how to enter an expert’s world without pretending to be the expert, ask the follow-up question, and shape what I learn into clear, credible content that sounds like the person behind it.</p></div></div></section>
-      <section class="contact" id="contact" aria-labelledby="contact-title"><p class="section-label">Get in touch</p><div class="contact-layout"><h2 id="contact-title">We’ll figure out what your content needs to do.</h2><form class="contact-form" action="https://formspree.io/f/mzeddzqn" method="POST"><input type="hidden" name="_subject" value="New website inquiry — Your Content Person"><div class="form-row"><label><span>First name</span><input type="text" name="first_name" autocomplete="given-name" required=""></label><label><span>Last name</span><input type="text" name="last_name" autocomplete="family-name" required=""></label></div><label><span>Email</span><input type="email" name="email" autocomplete="email" required=""></label><label><span>Phone <em>(optional)</em></span><input type="tel" name="phone" autocomplete="tel"></label><label><span>Message</span><textarea name="message" rows="5" required=""></textarea></label><button class="button button-light" type="submit">Send message</button></form></div></section>
+      <section class="contact" id="contact" aria-labelledby="contact-title"><p class="section-label">Get in touch</p><div class="contact-layout"><h2 id="contact-title">We’ll figure out what your content needs to do.</h2><form class="contact-form" action="https://formspree.io/f/mzeddzqn" method="POST"><input type="hidden" name="_subject"><div class="form-row"><label><span>First name</span><input type="text" name="first_name" autocomplete="given-name" required=""></label><label><span>Last name</span><input type="text" name="last_name" autocomplete="family-name" required=""></label></div><label><span>Email</span><input type="email" name="email" autocomplete="email" required=""></label><label><span>Phone <em>(optional)</em></span><input type="tel" name="phone" autocomplete="tel"></label><label><span>Message</span><textarea name="message" rows="5" required=""></textarea></label><button class="button button-light" type="submit">Send message</button></form></div></section>
     </main>
+    <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="dialog-title" open="">
+      <div class="dialog-inner">
+        <button class="dialog-close" type="button" data-contact-close="" aria-label="Close contact form">×</button>
+        <p class="section-label">Get in touch</p>
+        <h2 id="dialog-title">We’ll figure out what your content needs to do.</h2>
+        <form class="contact-form" action="https://formspree.io/f/mzeddzqn" method="POST">
+          <input type="hidden" name="_subject">
+          <div class="form-row"><label><span>First name</span><input type="text" name="first_name" autocomplete="given-name" required=""></label><label><span>Last name</span><input type="text" name="last_name" autocomplete="family-name" required=""></label></div>
+          <label><span>Email</span><input type="email" name="email" autocomplete="email" required=""></label>
+          <label><span>Phone <em>(optional)</em></span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label><span>Message</span><textarea name="message" rows="5" required=""></textarea></label>
+          <button class="button button-light" type="submit">Send message</button>
+        </form>
+      </div>
+    <com-1password-button></com-1password-button><com-1password-menu></com-1password-menu></dialog>
     <footer><a class="wordmark wordmark-footer" href="#top"><span>Your Content</span><span>Person<span class="blue-mark" aria-hidden="true">.</span></span></a><p>Content strategy and writing for companies, agencies, and individual leaders</p><a href="https://humanforcontext.substack.com/" target="_blank" rel="noopener noreferrer">Read my writing on Substack</a><a href="#top">Back to top</a></footer>
+    <script>
+      const contactDialog = document.getElementById('contact-dialog');
+      document.querySelectorAll('[data-contact-open]').forEach((trigger) => trigger.addEventListener('click', (event) => {
+        event.preventDefault();
+        contactDialog.showModal();
+        contactDialog.querySelector('input[name="first_name"]').focus();
+      }));
+      document.querySelector('[data-contact-close]').addEventListener('click', () => contactDialog.close());
+      contactDialog.addEventListener('click', (event) => { if (event.target === contactDialog) contactDialog.close(); });
+    </script>
   
 
-</body><div id="ctrl-f-plus-shadow-host" data-injection-time="1791310470255" style=""></div><div id="codex-agent-overlay-root" data-codex-agent-overlay-root="true"></div></html>
+<div id="1p-menu-live-region" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all" style="clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); height: 1px; overflow: hidden; position: fixed; top: 0px; left: 0px; white-space: nowrap; width: 1px; overflow-wrap: normal;">1Password menu is available. Press down arrow to select.</div></body><div id="ctrl-f-plus-shadow-host" data-injection-time="1791310852537" style=""></div><div id="codex-agent-overlay-root" data-codex-agent-overlay-root="true"></div></html>
